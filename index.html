@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="vendors/owl-carousel/css/owl.carousel.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="vendors/owl-carousel/css/owl.theme.default.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="vendors/aos/css/aos.css" />
@@ -33,16 +33,34 @@
       }
       .price-card {
         transition: all 0.3s ease;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e9ecef;
       }
       .price-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
       }
       .guarantee-badge {
         background-color: #f8f9fa;
         border-left: 4px solid #4e73df;
         padding: 10px;
         margin-bottom: 15px;
+      }
+      .owl-carousel .owl-stage {
+        padding: 15px 0;
+        display: flex;
+        align-items: stretch;
+      }
+      .owl-carousel .item {
+        padding: 0 10px;
+        height: 100%;
+      }
+      .card-title {
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #dee2e6;
       }
     </style>
   </head>
@@ -90,29 +108,28 @@
                 </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#header-section"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link" href="#header-section">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#features-section">Layanan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#digital-marketing-section">Harga</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feedback-section">Testimoni</a>
+                <a class="nav-link" href="#pricing-section">Harga</a>
               </li>
               <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-                <button class="btn btn-accent" onclick="window.open('https://wa.me/+6282237817895', '_blank')">
-                    Order Sekarang
+                <button
+                  class="btn btn-accent"
+                  onclick="window.open('https://wa.me/+6282237817895', '_blank')"
+                >
+                  Order Sekarang
                 </button>
-            </li>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <div class="banner">
       <div class="container">
         <h1 class="font-weight-semibold">
@@ -129,17 +146,14 @@
           >
             Pesan Sekarang
           </button>
-          <button
-            
-            class="btn btn-opacity-success ml-1"
-          >
-          <a href="#features-section">
-            Lihat Layanan
+          <button class="btn btn-opacity-success ml-1">
+            <a href="#features-section">Lihat Layanan</a>
           </button>
         </div>
         <img src="images/Group171.svg" alt="" class="img-fluid" />
       </div>
     </div>
+
     <div class="content-wrapper">
       <div class="container">
         <section class="features-overview" id="features-section">
@@ -186,6 +200,7 @@
             </div>
           </div>
         </section>
+
         <section
           class="digital-marketing-service"
           id="digital-marketing-section"
@@ -254,159 +269,165 @@
                 </ol>
               </div>
               <button
-              class="btn btn-opacity-light mr-1"
-              onclick="window.open('https://wa.me/+6282237817895', '_blank')"
-            >
-              Pesan Sekarang
-            </button>
+                class="btn btn-opacity-light mr-1"
+                onclick="window.open('https://wa.me/+6282237817895', '_blank')"
+              >
+                Pesan Sekarang
+              </button>
             </div>
           </div>
         </section>
 
-
-<!-- Pricing Section -->
-<section class="case-studies" id="pricing-section">
-  <div class="row grid-margin">
-    <div class="col-12 text-center pb-5">
-      <h2>Paket Custom</h2>
-      <h6 class="section-subtitle text-muted">
-        Harga fleksibel sesuai kebutuhan dan budget Anda
-      </h6>
-    </div>
-    <div class="col-12 col-md-8 col-lg-6 mx-auto" data-aos="zoom-in">
-      <div class="card price-card">
-        <div class="card-body p-4 text-center">
-          <h5 class="card-title">Custom Project</h5>
-          <h2 class="my-3">Mulai dari Rp 10.000</h2>
-          <ul class="list-unstyled text-muted text-left">  <!-- Tambahkan text-left -->
-            <li class="pb-2 d-flex align-items-start">     <!-- Tambahkan flexbox -->
-              <i class="mdi mdi-check-circle text-success mr-2 mt-1"></i>  <!-- Tambahkan mt-1 untuk alignment vertikal -->
-              <span>Negosiasi harga sesuai kompleksitas</span>
-            </li>
-            <li class="pb-2 d-flex align-items-start">
-              <i class="mdi mdi-check-circle text-success mr-2 mt-1"></i>
-              <span>Revisi hingga puas</span>
-            </li>
-            <li class="pb-2 d-flex align-items-start">
-              <i class="mdi mdi-check-circle text-success mr-2 mt-1"></i>
-              <span>Konsultasi gratis</span>
-            </li>
-            <li class="pb-2 d-flex align-items-start">
-              <i class="mdi mdi-check-circle text-success mr-2 mt-1"></i>
-              <span>Deadline fleksibel</span>
-            </li>
-            <li class="pb-2 d-flex align-items-start">
-              <i class="mdi mdi-check-circle text-success mr-2 mt-1"></i>
-              <span>Bonus referensi & formatting</span>
-            </li>
-          </ul>
-          <p class="text-muted mt-3 mb-0">*Harga final akan dikonfirmasi setelah diskusi</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="customer-feedback" id="feedback-section">
-          <div class="row">
+        <section class="case-studies" id="pricing-section">
+          <div class="row grid-margin">
             <div class="col-12 text-center pb-5">
-              <h2>Apa Kata Klien Kami?</h2>
-              <h6 class="section-subtitle text-muted m-0">
-                Testimoni dari mahasiswa yang telah menggunakan layanan kami
+              <h2>Price List</h2>
+              <h6 class="section-subtitle text-muted">
+                Professional academic and non-academic writing services
               </h6>
             </div>
-            <div class="owl-carousel owl-theme grid-margin">
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      src="images/face2.jpg"
-                      width="89"
-                      height="89"
-                      alt=""
-                      class="img-customer"
-                    />
-                    <p class="m-0 py-3 text-muted">
-                      "Tugas pemrograman saya selesai tepat waktu dan berjalan
-                      sempurna. Sangat recommended!"
-                    </p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Andi Pratama</h6>
-                    <h6 class="customer-designation text-muted m-0">
-                      Mahasiswa Teknik Informatika
-                    </h6>
+
+            <div class="col-12">
+              <div class="owl-carousel owl-theme grid-margin">
+                <div class="item">
+                  <div class="card price-card h-100" style="min-height: 500px">
+                    <div class="card-body p-4 d-flex flex-column">
+                      <h5 class="card-title text-center">FORMAL</h5>
+                      <ul class="list-unstyled text-left flex-grow-1">
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Makalah</span>
+                          <span>2-6rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Jurnal Basic</span>
+                          <span>2-6rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Jurnal Sinta</span>
+                          <span>2-7rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Artikel</span>
+                          <span>2-6rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Karya Ilmiah Basic</span>
+                          <span>2-7rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Proposal</span>
+                          <span>2-6rb/hal</span>
+                        </li>
+                        <li class="pb-2 text-center mt-auto">
+                          <small class="text-muted"
+                            >Segala jenis tugas lainnya request</small
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      src="images/face3.jpg"
-                      width="89"
-                      height="89"
-                      alt=""
-                      class="img-customer"
-                    />
-                    <p class="m-0 py-3 text-muted">
-                      "Makalah 20 halaman saya dikerjakan dengan sangat rapi dan
-                      referensi yang valid. Terima kasih!"
-                    </p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Siti Rahayu</h6>
-                    <h6 class="customer-designation text-muted m-0">
-                      Mahasiswa Psikologi
-                    </h6>
+
+                <div class="item">
+                  <div class="card price-card h-100" style="min-height: 500px">
+                    <div class="card-body p-4 d-flex flex-column">
+                      <h5 class="card-title text-center">NON FORMAL</h5>
+                      <ul class="list-unstyled text-left flex-grow-1">
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>PPT</span>
+                          <span>1-3rb/hal</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Pharafrase</span>
+                          <span>request</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Turnitin Cek</span>
+                          <span>4-9rb/file</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Modul Ajar</span>
+                          <span>diskon 15%</span>
+                        </li>
+                        <li class="pb-2 text-center mt-auto">
+                          <small class="text-muted">Lainnya request</small>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      src="images/face20.jpg"
-                      width="89"
-                      height="89"
-                      alt=""
-                      class="img-customer"
-                    />
-                    <p class="m-0 py-3 text-muted">
-                      "Presentasi bisnis saya mendapat nilai A berkat slide yang
-                      dibuat tim EduJoki. Sangat profesional!"
-                    </p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Budi Santoso</h6>
-                    <h6 class="customer-designation text-muted m-0">
-                      Mahasiswa Manajemen
-                    </h6>
+
+                <div class="item">
+                  <div class="card price-card h-100" style="min-height: 500px">
+                    <div class="card-body p-4 d-flex flex-column">
+                      <h5 class="card-title text-center">UT</h5>
+                      <ul class="list-unstyled text-left flex-grow-1">
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Daftar Hadir</span>
+                          <span>gratis</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Kuis</span>
+                          <span>1rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Diskusi</span>
+                          <span>4-15rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Tugas tutorial</span>
+                          <span>17-29rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>TMK</span>
+                          <span>17-29rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>THE</span>
+                          <span>23-47rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>KARIL LENGKAP</span>
+                          <span>669-999rb</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>TAP</span>
+                          <span>70-199rb</span>
+                        </li>
+                        <li class="pb-2 text-center mt-auto">
+                          <small class="text-muted">Lainnya Request</small>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      src="images/face15.jpg"
-                      width="89"
-                      height="89"
-                      alt=""
-                      class="img-customer"
-                    />
-                    <p class="m-0 py-3 text-muted">
-                      "Laporan penelitian saya selesai sebelum deadline dengan
-                      kualitas yang melebihi ekspektasi."
-                    </p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Dewi Anggraeni</h6>
-                    <h6 class="customer-designation text-muted m-0">
-                      Mahasiswa Kedokteran
-                    </h6>
+
+                <div class="item">
+                  <div class="card price-card h-100" style="min-height: 500px">
+                    <div class="card-body p-4 d-flex flex-column">
+                      <h5 class="card-title text-center">DISKON</h5>
+                      <ul class="list-unstyled text-left flex-grow-1">
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>SKRIPSI BAB 1-3</span>
+                          <span>request</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>SKRIPSI FULL BAB</span>
+                          <span>diskon 20%</span>
+                        </li>
+                        <li class="pb-2 d-flex justify-content-between">
+                          <span>Makalah + Ppt</span>
+                          <span>diskon 15%</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <section class="contact-us" id="contact-section">
           <div class="contact-us-bgimage grid-margin">
             <div class="pb-4">
@@ -416,12 +437,16 @@
               <h4 class="pt-1" data-aos="fade-down">Hubungi kami sekarang</h4>
             </div>
             <div data-aos="fade-up">
-              <button class="btn btn-accent" onclick="window.open('https://wa.me/+6282237817895', '_blank')">
+              <button
+                class="btn btn-accent"
+                onclick="window.open('https://wa.me/+6282237817895', '_blank')"
+              >
                 Order Sekarang
-            </button>
+              </button>
             </div>
           </div>
         </section>
+
         <section class="contact-details" id="contact-details-section">
           <div class="row text-center text-md-left">
             <div class="col-12 col-md-6 col-lg-3 grid-margin">
@@ -434,16 +459,13 @@
             <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Kontak Kami</h5>
               <p class="text-muted m-0 d-flex align-items-center mb-2">
-                <i class="mdi mdi-phone mr-2" style="line-height: 1;"></i>
-                +6282237817895
+                <i class="mdi mdi-phone mr-2"></i>+6282237817895
               </p>
               <p class="text-muted d-flex align-items-center mb-2">
-                <i class="mdi mdi-instagram mr-2" style="line-height: 1;"></i>
-                @jokitugas.bygita
+                <i class="mdi mdi-instagram mr-2"></i>@jokitugas.bygita
               </p>
               <p class="text-muted d-flex align-items-center">
-                <i class="mdi mdi-clock mr-2" style="line-height: 1;"></i>
-                Buka 24 Jam
+                <i class="mdi mdi-clock mr-2"></i>Buka 24 Jam
               </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3 grid-margin">
@@ -452,75 +474,75 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Follow Kami</h5>
-              <div class="d-flex justify-content-center justify-content-md-start">
-                <!-- TikTok (SVG) -->
-                <a href="https://www.tiktok.com/@namapengguna" target="_blank" rel="noopener noreferrer" class="mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                  </svg>
+              <div
+                class="d-flex justify-content-center justify-content-md-start"
+              >
+                <a
+                  href="https://www.tiktok.com/@namapengguna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mr-3"
+                >
+                  <i class="mdi mdi-tiktok" style="font-size: 24px"></i>
                 </a>
-            
-                <!-- Instagram (SVG) -->
-                <a href="https://www.instagram.com/jokitugas.bygita/" target="_blank" rel="noopener noreferrer" class="mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
+                <a
+                  href="https://www.instagram.com/jokitugas.bygita/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mr-3"
+                >
+                  <i class="mdi mdi-instagram" style="font-size: 24px"></i>
                 </a>
-          
-            
-                <!-- WhatsApp (SVG) -->
-                <a href="https://wa.me/+6282237817895" target="_blank" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                  </svg>
+                <a
+                  href="https://wa.me/+6282237817895"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="mdi mdi-whatsapp" style="font-size: 24px"></i>
                 </a>
               </div>
               <p class="text-muted pt-3 m-0">Respon cepat via WhatsApp</p>
             </div>
           </div>
         </section>
+
         <footer class="border-top">
           <p class="text-center text-muted pt-4">
             Copyright © 2025 <span class="text-accent">EduJoki</span>. All
             rights reserved.
           </p>
         </footer>
-        <!-- Modal for Order Form -->
       </div>
     </div>
+
     <script src="vendors/jquery/jquery.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="vendors/aos/js/aos.js"></script>
     <script src="js/landingpage.js"></script>
     <script>
-      // Additional custom JS for EduJoki
       $(document).ready(function () {
-        // Smooth scrolling for anchor links
+        // Initialize Owl Carousel
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+          },
+        });
+
+        // Smooth scrolling
         $('a[href*="#"]').on("click", function (e) {
           e.preventDefault();
           $("html, body").animate(
-            {
-              scrollTop: $($(this).attr("href")).offset().top - 70,
-            },
+            { scrollTop: $($(this).attr("href")).offset().top - 70 },
             500,
             "linear"
           );
         });
-
-        // Highlight active nav item on scroll
-        $(window)
-          .on("scroll", function () {
-            var scrollDistance = $(window).scrollTop();
-
-            $("section").each(function (i) {
-              if ($(this).position().top <= scrollDistance + 100) {
-                $(".nav-link.active").removeClass("active");
-                $(".nav-link").eq(i).addClass("active");
-              }
-            });
-          })
-          .scroll();
 
         // Initialize AOS animation
         AOS.init({
