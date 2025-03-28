@@ -164,42 +164,119 @@
               profesional dan berkualitas.
             </h6>
           </div>
-          <div class="d-md-flex justify-content-between">
-            <div class="grid-margin d-flex justify-content-start">
-              <div class="features-width">
-                <img src="images/Group12.svg" alt="" class="img-icons" />
-                <h5 class="py-3">Tugas<br />Makalah & Essay</h5>
-                <p class="text-muted">
-                  Bantuan penyelesaian makalah, essay, paper, artikel ilmiah,
-                  dan lainnya dengan referensi terpercaya.
-                </p>
-                <a href="#"><p class="readmore-link">Selengkapnya</p></a>
-              </div>
+
+          <div class="d-md-flex justify-content-between features-list">
+            <!-- Tugas Makalah & Essay -->
+            <div class="feature-item">
+              <img
+                src="images/Group12.svg"
+                alt="Icon Makalah"
+                class="img-icons"
+              />
+              <h5 class="py-3">Tugas<br />Makalah & Essay</h5>
+              <p class="text-muted">
+                Bantuan penyelesaian makalah, essay, paper, artikel ilmiah, dan
+                lainnya dengan referensi terpercaya.
+              </p>
+              <a href="#"><p class="readmore-link">Selengkapnya</p></a>
             </div>
-            <div class="grid-margin d-flex justify-content-center">
-              <div class="features-width">
-                <img src="images/Group7.svg" alt="" class="img-icons" />
-                <h5 class="py-3">Tugas<br />Pemrograman</h5>
-                <p class="text-muted">
-                  Penyelesaian tugas coding berbagai bahasa pemrograman dengan
-                  dokumentasi lengkap.
-                </p>
-                <a href="#"><p class="readmore-link">Selengkapnya</p></a>
-              </div>
+
+            <!-- Tugas Akhir Skripsi -->
+            <div class="feature-item">
+              <img
+                src="images/Group5.svg"
+                alt="Icon Skripsi"
+                class="img-icons"
+              />
+              <h5 class="py-3">Tugas<br />Akhir Skripsi dan Karil UT</h5>
+              <p class="text-muted">
+                Bantuan penyelesaian skripsi, tesis, dan karya ilmiah
+                Universitas Terbuka dengan bimbingan ahli.
+              </p>
+              <a href="#"><p class="readmore-link">Selengkapnya</p></a>
             </div>
-            <div class="grid-margin d-flex justify-content-end">
-              <div class="features-width">
-                <img src="images/Group5.svg" alt="" class="img-icons" />
-                <h5 class="py-3">Tugas<br />Presentasi</h5>
-                <p class="text-muted">
-                  Pembuatan slide presentasi profesional dengan desain menarik
-                  dan konten berkualitas.
-                </p>
-                <a href="#"><p class="readmore-link">Selengkapnya</p></a>
-              </div>
+
+            <!-- Tugas Pemrograman -->
+            <div class="feature-item">
+              <img
+                src="images/Group7.svg"
+                alt="Icon Pemrograman"
+                class="img-icons"
+              />
+              <h5 class="py-3">Tugas<br />Pemrograman</h5>
+              <p class="text-muted">
+                Penyelesaian tugas coding berbagai bahasa pemrograman dengan
+                dokumentasi lengkap.
+              </p>
+              <a href="#"><p class="readmore-link">Selengkapnya</p></a>
+            </div>
+
+            <!-- Tugas Presentasi -->
+            <div class="feature-item">
+              <img
+                src="images/Group5.svg"
+                alt="Icon Presentasi"
+                class="img-icons"
+              />
+              <h5 class="py-3">Tugas<br />Presentasi</h5>
+              <p class="text-muted">
+                Pembuatan slide presentasi profesional dengan desain menarik dan
+                konten berkualitas.
+              </p>
+              <a href="#"><p class="readmore-link">Selengkapnya</p></a>
             </div>
           </div>
         </section>
+
+        <style>
+          /* Styling yang lebih sederhana */
+          .features-overview {
+            padding: 3rem 1rem;
+            background: #fff;
+          }
+
+          .content-header {
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          .features-list {
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+          }
+
+          .feature-item {
+            width: 23%;
+            padding: 1rem;
+            text-align: center;
+          }
+
+          .img-icons {
+            height: 60px;
+            margin-bottom: 1rem;
+          }
+
+          .readmore-link {
+            color: #0066cc;
+            font-weight: 500;
+            margin-top: 1rem;
+          }
+
+          /* Responsive */
+          @media (max-width: 992px) {
+            .feature-item {
+              width: 48%;
+              margin-bottom: 2rem;
+            }
+          }
+
+          @media (max-width: 576px) {
+            .feature-item {
+              width: 100%;
+            }
+          }
+        </style>
 
         <section
           class="digital-marketing-service"
